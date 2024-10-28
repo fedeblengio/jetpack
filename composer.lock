@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589cc0f65c3aaa7d4e9024d545bc1974",
+    "content-hash": "2cebc9ea471079534302aab4ba66e5ba",
     "packages": [
         {
             "name": "brick/math",
@@ -509,6 +509,36 @@
                 }
             ],
             "time": "2023-10-06T06:47:41+00:00"
+        },
+        {
+            "name": "fedeblengio/jetpack",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/fedeblengio/jetpack",
+                "reference": "838d0efb53f7d005e818501ea43a71b49a62bad6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fedeblengio\\Jetpack\\Providers\\JetpackServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fedeblengio\\Jetpack\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Jetpack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
         },
         {
             "name": "fruitcake/php-cors",
@@ -7831,8 +7861,10 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "fedeblengio/jetpack": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
