@@ -10,7 +10,7 @@ class JetpackServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../Views', 'jetpack');
-        $this->loadMigrationsFrom(__DIR__.'/../Migrations');
+//        $this->loadMigrationsFrom(__DIR__.'/../Migrations');
 
         $this->publishes([
             __DIR__.'/../Config/jetpack.php' => config_path('jetpack.php'),
