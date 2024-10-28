@@ -3,7 +3,6 @@
     "description": "Jetpack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Fedeblengio\\Jetpack\\": "src/"
@@ -16,15 +15,12 @@
             ]
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": [
         {
-            "type": "path",
-            "url": "./packages/fedeblengio/jetpack",
-            "options": {
-                "symlink": true
-            }
+            "type": "vcs",
+            "url": "https://github.com/fedeblengio/jetpack"
         }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    ]
 }
