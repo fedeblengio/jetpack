@@ -1,5 +1,5 @@
 {
-    "name": "fedeblengio/snap-stack",
+    "name": "snap-stack/install",
     "description": "SnapStack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
     "type": "library",
     "license": "MIT",
