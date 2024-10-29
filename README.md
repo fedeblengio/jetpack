@@ -68,5 +68,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Comandos
 
 ```bash
-composer require fedeblengio/jetpack:dev-main --no-cache
+composer require SnapStack/crud:dev-main --no-cache
 ```

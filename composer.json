@@ -10,6 +10,7 @@
     "require": {
         "php": "^8.2",
         "fedeblengio/jetpack": "dev-main",
+        "fedeblengio/snap-stack": "dev-main",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
@@ -74,7 +75,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "packages/fedeblengio/jetpack",
+            "url": "https://github.com/fedeblengio/jetpack",
             "options": {
                 "symlink": false
             }

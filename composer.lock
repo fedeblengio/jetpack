@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2cebc9ea471079534302aab4ba66e5ba",
+    "content-hash": "2d8ba271acba5f54623d36fafd02407f",
     "packages": [
         {
             "name": "brick/math",
@@ -511,30 +511,60 @@
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
-            "name": "fedeblengio/jetpack",
+            "name": "fedeblengio/snap-stack",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "packages/fedeblengio/jetpack",
+                "url": "packages/SnapStack/crud",
                 "reference": "838d0efb53f7d005e818501ea43a71b49a62bad6"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Fedeblengio\\Jetpack\\Providers\\JetpackServiceProvider"
+                        "SnapStack\\Crud\\Providers\\SnapStackServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Fedeblengio\\Jetpack\\": "src/"
+                    "SnapStack\\crud\\": "src/"
                 }
             },
             "license": [
                 "MIT"
             ],
             "description": "Jetpack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
+            "transport-options": {
+                "symlink": false,
+                "relative": true
+            }
+        },
+        {
+            "name": "fedeblengio/snap-stack",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/SnapStack/crud",
+                "reference": "36a44fd4ee49f42e3c05f22f2d1643e33388005f"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SnapStack\\crud\\Providers\\SnapStackServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SnapStack\\crud\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "SnapStack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
             "transport-options": {
                 "symlink": false,
                 "relative": true
@@ -7863,7 +7893,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "fedeblengio/jetpack": 20
+        "fedeblengio/jetpack": 20,
+        "fedeblengio/snap-stack": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -1,17 +1,17 @@
 {
-    "name": "fedeblengio/jetpack",
-    "description": "Jetpack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
+    "name": "fedeblengio/snap-stack",
+    "description": "SnapStack is a Laravel package that provides a set of tools to help you build your Laravel applications faster.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Fedeblengio\\Jetpack\\": "src/"
+            "SnapStack\\crud\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Fedeblengio\\Jetpack\\Providers\\JetpackServiceProvider"
+                "SnapStack\\crud\\Providers\\SnapStackServiceProvider"
             ]
         }
     },
